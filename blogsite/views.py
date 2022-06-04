@@ -31,3 +31,6 @@ def blogs_by_category(request, slug):
         "selected_category": slug
     }
     return render(request, 'blogsite/blogs.html', context)
+
+def donates(request):
+    return render(request, 'blogsite/donates.html')
