@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-=^(tc&hk4yn_tj2^o!ilv28!sxzwh4tj+bg7mmo6%a2n8)ofr&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['blogcyberworm.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['blog-cyberworm.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
@@ -48,6 +48,7 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
