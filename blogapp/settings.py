@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=^(tc&hk4yn_tj2^o!ilv28!sxzwh4tj+bg7mmo6%a2n8)ofr&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = Faslse
 
 ALLOWED_HOSTS = ['blog-cyberworm.herokuapp.com', '127.0.0.1']
 
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
 ]
 
-CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_UPLOAD_PATH = "uploads/blog/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -128,6 +128,16 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static/"),
+]
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
+
+MEDIA_ROOT = BASE_DIR / "uploads"
+MEDIA_URL = "/images/"
+"""
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles/")
 
 MEDIA_ROOT = BASE_DIR / "uploads/"
@@ -139,7 +149,7 @@ STATICFILES_DIRS = [
     #'static/',
     #BASE_DIR /"static"
 ]
-
+"""
 #STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
