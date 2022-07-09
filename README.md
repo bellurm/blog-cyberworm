@@ -1,4 +1,4 @@
-Bu proje bir blog sitesi projesidir. Bu projeyi yapma sebebim, ülkemizdeki kaynak eksikliği idi. Kaynak eksikliğinden dolayı insanlara faydalı ve 'Türkçe' kaynaklar sunmak istedim.
+Bu proje bir blog sitesi projesidir ve siteyi Python'un Django Framework'ü ile yaptım. Bu projeyi yapma sebebim, ülkemizdeki kaynak eksikliği idi. Kaynak eksikliğinden dolayı insanlara faydalı ve 'Türkçe' kaynaklar sunmak istedim.
 Bu siteyi kapattım ve kodlarını herkese açık hâle getirdim.
 Hedefimden vazgeçmedim ve yeni bir site ile yola devam ediyorum.
 Siteme göz atmak için https://blog-cyberworm.com adresine gidebilirsiniz.
